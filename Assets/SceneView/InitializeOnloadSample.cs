@@ -1,5 +1,5 @@
 // NOTE:
-// Using InitializeOnload is not good in most case.
+// Using InitializeOnload need to take care in most case.
 // Because it can't remove (or control) the EventHandler.
 // You can use it if the Custom-GUI needs to keep working.
 // Unfortunately, some blogs are suggesting to using InitializeOnload.

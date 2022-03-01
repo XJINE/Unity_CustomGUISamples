@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-public class SceneViewSample : EditorWindow
+public class DuringSceneGUISample : EditorWindow
 {
     private static bool _visible = false;
     
@@ -23,11 +23,14 @@ public class SceneViewSample : EditorWindow
 
     private static void OnSceneGUI(SceneView sceneView)
     {
+        // NOTE:
+        // Handles.BeginGUI/EndGUI is quite important to rendering GUI correctly.
+
         Handles.BeginGUI();
 
          if (GUILayout.Button("Button in SceneView"))
          {
-             Debug.Log(typeof(SceneViewSample));
+             Debug.Log(typeof(DuringSceneGUISample));
          }
 
         Handles.EndGUI();
