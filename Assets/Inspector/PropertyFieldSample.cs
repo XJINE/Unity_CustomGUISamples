@@ -14,6 +14,9 @@ public class PropertyFieldSampleEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        // NOTE:
+        // EditorGUILayout.PropertyField is useful to show default GUI.
+
         var propertyFieldSample = target as PropertyFieldSample;
 
         EditorGUILayout.PropertyField(serializedObject.FindProperty("intValue"));
